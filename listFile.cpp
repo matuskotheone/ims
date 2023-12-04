@@ -2,7 +2,7 @@
 
 using namespace std;
 
-queue<Field*> *fieldsQueue;
+queue <Field*> fieldsQueue;
 
 set <Tractor*> tractors;
 set <Harvester*> harvesters;
@@ -10,5 +10,5 @@ set <Harvester*> harvesters;
 set <Tractor*> tractorsWait;
 set <Harvester*> harvestersWait;
 
-queue<Tractor*> *tractorsQueue;
-queue<Harvester*> *harvestersQueue;
+queue<Tractor*> tractorsQueue;
+queue<Harvester*> harvestersQueue;

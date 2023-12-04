@@ -32,9 +32,13 @@ int main(void)
         return 1;
     }
 
-    string line;
+    fieldsQueue = queue <Field*>();
+    tractorsQueue = queue <Tractor*>();
+    harvestersQueue = queue <Harvester*>();
 
-    fieldsQueue = new queue<Field*>();
+
+
+    string line;
 
     while (getline(file, line))
     {
@@ -45,25 +49,29 @@ int main(void)
             int area;
             int distance;
             sscanf(line.c_str(), "F %d %d", &area, &distance);
-            fieldsQueue->push(new Field(area, distance));
+            fieldsQueue.push(new Field(AR_TO_M2(area), distance));
         }
         else if (line[0] == 'T')
         {
             int speed, maxCapacity;
             sscanf(line.c_str(), "T %d %d", &speed, &maxCapacity);
-            Tractor *t = new Tractor(speed, maxCapacity);
+            Tractor *t = new Tractor(speed, TON_TO_KG(maxCapacity));
             tractors.insert(t);
         }
         else if (line[0] == 'H')
         {
             int maxSpeed, harvestSpeed, maxCapacity;
             sscanf(line.c_str(), "H %d %d %d", &maxSpeed, &harvestSpeed, &maxCapacity);
-            Harvester *h = new Harvester(maxSpeed, harvestSpeed, maxCapacity);
+            Harvester *h = new Harvester(maxSpeed, harvestSpeed, TON_TO_KG(maxCapacity));
             harvesters.insert(h);
         }
+        //if the line is just white characters, skip it
+        else if (line.find_first_not_of(' ') == string::npos)
+            continue;
         else 
         {
             cout << "Chyba v subore" << endl;
+            cout << line << endl;
             return 1;
         }
     }

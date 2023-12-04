@@ -28,13 +28,16 @@ class Tractor : public Process
     public:
         int maxCapacity;
         int currentCapacity;
-        Tractor(int maxCapacity, double maxSpeed);
+        Tractor(double maxSpeed, int maxCapacity);
         void Behavior() override;
+        bool isReleased;
         bool isFull();
         void endShift();
+        void fillTractor(int ammount);
         void goToField();
         void emptyTractor();
         void endEmptying();
+        static void ReleaseTractors();
 };
 
 #endif // TRACTOR_H

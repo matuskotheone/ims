@@ -14,6 +14,7 @@ void Season::Behavior()
 {
     if (Random() > RAIN_CHANCE)
     {
+        cout << "zapinam den" << endl;
         (new Day())->Activate();
     }
     else 
@@ -22,6 +23,8 @@ void Season::Behavior()
     }
 
     numberOfDays++;
+    cout << "pocet dazdivych dni: " << numberOfRainyDays << endl;
     Activate(HOUR_TO_MIN(24));
+    cout << "koniec dna" << endl;
 }
 

@@ -1,6 +1,6 @@
 #include "Tractor.h"
 
-Tractor::Tractor(int maxCapacity, double maxSpeed)
+Tractor::Tractor(double maxSpeed, int maxCapacity)
 {
     this->maxCapacity = maxCapacity;
     this->maxSpeed = maxSpeed;
@@ -9,38 +9,65 @@ Tractor::Tractor(int maxCapacity, double maxSpeed)
 
 bool Tractor::isFull()
 {
-    return this->currentCapacity == this->maxCapacity;
+    return this->currentCapacity >= this->maxCapacity;
 }
 
 
 void Tractor::Behavior()
 {
+novyDen:
+    cout << "THIS IS TRACTOR CAPACITY" << this->maxCapacity << endl;
+    isReleased = false;
+
+    tractorsWait.clear();
+    tractorsQueue = queue<Tractor*>();
+    cout << "tractor" << endl;
     currentCapacity = 0;
     shiftEnded = false;
-    currentField = fieldsQueue->front();
+    currentField = fieldsQueue.front();
+    cout << "toto je current field distance" << currentField->distance << endl;
     goToField();
     while (true)
     {
         if (isFull())
         {
+            cout << "idem vyprazdnovat" << endl;
             emptyTractor();
+            cout << "vyprazdnil som" << endl;
         }
-        tractorsQueue->push(this);
+        cout << "tractor waiting" << endl;
         tractorsWait.insert(this);
-        if (!harvestersQueue->empty())
+        cout << "tractor to queue"<< endl;
+        tractorsQueue.push(this);
+
+        cout << "tractor in queeu" << endl;
+        if (!harvestersQueue.empty())
         {
-            Harvester* harvester = harvestersQueue->front();
-            harvestersQueue->pop();
+            Harvester* harvester = harvestersQueue.front();
+            harvestersQueue.pop();
             harvestersWait.erase(harvester);
             harvester->Activate();
         }
+        cout << "tractor waiting" << endl;
         Passivate();
+        cout << "tractor activated" << endl;
+        cout << this->currentCapacity << "out of " << this->maxCapacity << endl;
+        cout << "shift ended " << shiftEnded << endl;
         if (shiftEnded)
         {
+            cout << "shift ended" << endl;
             break;
         }
         endEmptying();
     }
+    cout << "%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%"<< endl;
+    Passivate();
+    goto novyDen;
+}
+
+void Tractor::fillTractor(int ammount)
+{
+    currentCapacity += ammount;
 }
 
 void Tractor::emptyTractor()
@@ -60,6 +87,26 @@ void Tractor::endShift()
 {
     shiftEnded = true;
 }
+
+void Tractor::ReleaseTractors()
+{
+    cout << "$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$"<< endl;
+    for (Tractor* tractor : tractorsWait)
+    {
+        if (tractor->isReleased)
+        {
+            continue;
+        }
+        cout << "releasing tractor" << endl;
+        tractor->isReleased = true;
+        tractor->endShift();
+        tractor->Activate();
+        cout << "^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^" << endl;
+    }
+}
+
+
+
 
 void Tractor::endEmptying()
 {

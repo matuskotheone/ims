@@ -1,3 +1,15 @@
-F 100000 5
-T 5 1000
-H 5 1000
+#F area(in ares) distance(in kilometers from the farm)
+#T speed(in kilometers per hour) capacity(in tons)
+#H speed(in kilometers per hour) harvestspeed(in m2 per minute) capacity(in tons)
+
+F 400 13
+F 400 13
+F 400 13
+F 400 13
+F 400 13
+T 80 100
+T 100 100
+H 20 100 20
+H 30 100 20
+
+
