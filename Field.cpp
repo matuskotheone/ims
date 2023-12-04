@@ -9,10 +9,7 @@ Field::Field(int area, int distance)
 
 void Field::harvest(int amount) // in meters squared
 {
-    not_harvested -= amount;
-}
-{
-    not_harvested -= 1;
+    notHarvested -= amount;
 }
 
 bool Field::isHarvested()

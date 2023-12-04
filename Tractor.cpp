@@ -17,7 +17,7 @@ void Tractor::Behavior()
 {
     currentCapacity = 0;
     shiftEnded = false;
-    currentField = fieldQueue->front();
+    currentField = fieldsQueue->front();
     goToField();
     while (true)
     {
@@ -29,8 +29,9 @@ void Tractor::Behavior()
         tractorsWait.insert(this);
         if (!harvestersQueue->empty())
         {
-            Harvester* harvester = harvestersQueue->pop();
-            harvestersWait.remove(harvester);
+            Harvester* harvester = harvestersQueue->front();
+            harvestersQueue->pop();
+            harvestersWait.erase(harvester);
             harvester->Activate();
         }
         Passivate();
@@ -38,6 +39,7 @@ void Tractor::Behavior()
         {
             break;
         }
+        endEmptying();
     }
 }
 
@@ -57,6 +59,11 @@ void Tractor::goToField()
 void Tractor::endShift()
 {
     shiftEnded = true;
+}
+
+void Tractor::endEmptying()
+{
+    Wait(TIME_TO_GET_TO_HARVESTER);
 }
 
 

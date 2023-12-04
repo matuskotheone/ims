@@ -10,7 +10,7 @@
 
 
 #include "simlib.h"
-#include "Traktor.h"
+#include "Tractor.h"
 #include "Harvester.h"
 #include "Season.h"
 #include "Day.h"
@@ -20,10 +20,7 @@
 using namespace std;
 
 
-
-
-
-int main(argc, *argv[])
+int main(void)
 {
     ifstream file;
 
@@ -54,8 +51,8 @@ int main(argc, *argv[])
         {
             int speed, maxCapacity;
             sscanf(line.c_str(), "T %d %d", &speed, &maxCapacity);
-            Traktor *t = new Traktor(, y, speed, maxCapacity);
-            traktors.insert(t);
+            Tractor *t = new Tractor(speed, maxCapacity);
+            tractors.insert(t);
         }
         else if (line[0] == 'H')
         {

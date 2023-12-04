@@ -12,9 +12,11 @@ Harvester::Harvester(int streetSpeed, int harvestSpeed, int maxCapacity)
 void Harvester::Behavior()
 {
     tractor = nullptr;
-    endShift = false;
+    shiftEnded = false;
     currentCapacity = 0;
-    currentField = fieldQueue->front();
+
+    currentField = fieldsQueue->front();
+
     goToField();
     while (1)
     {
@@ -34,17 +36,17 @@ void Harvester::Behavior()
 again:
         if (isFull())
         {
-            if (tractorsQueue->Empty() && !harvestersWait.contains(this))
+            if (tractorsQueue->empty() && !(harvestersWait.find(this)!=harvestersWait.end()))
             {
                 harvestersWait.insert(this);
-                harvesterQueue->push(this);
+                harvestersQueue->push(this);
                 Passivate();
                 goto again;
             }
             else
             {
-                tractor = tractorsQueue->pop();
-                tractorsWait.remove(tractor);
+                tractor = tractorsQueue->front();
+                tractorsWait.erase(tractor);
             }
             emptyHarvester();
         }
@@ -70,7 +72,7 @@ void Harvester::harvest()
 
 void Harvester::endShift()
 {
-    endShift = true;
+    shiftEnded = true;
 }
 
 void Harvester::emptyHarvester()
@@ -79,8 +81,8 @@ void Harvester::emptyHarvester()
     for (int i = 0; i < TIMETOEMPTY; i++)
     {
         Wait(1);
-        currentCapacity -= capacity / TIMETOEMPTY;
-        tractor->currentCapacity += capacity / TIMETOEMPTY;
+        currentCapacity -= maxCapacity / TIMETOEMPTY;
+        tractor->currentCapacity += maxCapacity / TIMETOEMPTY;
         if (currentCapacity <= 0)
         {
             break;

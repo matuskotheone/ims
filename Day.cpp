@@ -11,9 +11,9 @@ Day::~Day()
 }
 
 
-Day::Behavior::Behavior()
+void Day::Behavior()
 {
-    if (fieldsQueue->front()->is_harvested())
+    if (fieldsQueue->front()->isHarvested())
     {
         fieldsQueue->pop();
     }
@@ -23,9 +23,11 @@ Day::Behavior::Behavior()
     } 
     for(const auto& harvester : harvesters)
     {
-        harvester->activate();
+        harvester->Activate();
     }
+
     Wait(WORK_TIME);
+
     for(const auto& tractor : tractors)
     {
         tractor->endShift();

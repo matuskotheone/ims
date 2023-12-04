@@ -24,7 +24,7 @@ using namespace std;
 class Harvester : public Process
 {
 private: 
-    bool endShift;
+    bool shiftEnded;
     int streetSpeed;
     int harvestSpeed;
     int maxCapacity;

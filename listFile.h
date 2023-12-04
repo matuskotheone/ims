@@ -21,14 +21,15 @@
 #define KG_WHEAT_PER_M2 4 
 #define TIMETOEMPTY 8
 #define TIME_TO_GET_TO_HARVESTER 4
+#define WORK_TIME 480
 
 
 using namespace std;
 
 extern queue<Field*> *fieldsQueue;
 
-extern list <Tractor*> tractors;
-extern list <Harvester*> harvesters;
+extern set <Tractor*> tractors;
+extern set <Harvester*> harvesters;
 
 extern set <Tractor*> tractorsWait;
 extern set <Harvester*> harvestersWait;

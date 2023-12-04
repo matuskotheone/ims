@@ -1,7 +1,7 @@
 #include "Season.h"
 
-#DEFINE RAIN_CHANCE 0.1
-#DEFINE HOUR_TO_MIN(x) x*60
+#define RAIN_CHANCE 0.1
+#define HOUR_TO_MIN(x) x*60
 
 Season::Season()
 {
@@ -20,7 +20,6 @@ void Season::Behavior()
     }
 
     numberOfDays++;
-    Wait(HOUR_TO_MIN(24));
-    activate();
+    Activate(HOUR_TO_MIN(24));
 }
 

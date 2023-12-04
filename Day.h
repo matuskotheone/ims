@@ -17,12 +17,12 @@
 
 using namespace std;
 
-class Day : public Event
+class Day : public Process 
 {
 public:
     Day();
     void Behavior() override;
-}
+};
 
 
     

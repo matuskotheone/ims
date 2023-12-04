@@ -17,8 +17,8 @@ public:
     int area;
     int distance;
     int notHarvested;
-    Field(int area, int not_harvested, int distance);
-    void harvest();
+    Field(int area, int distance);
+    void harvest(int amount);
     bool isHarvested();
     int getDistance();
 };

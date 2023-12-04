@@ -18,18 +18,19 @@ using namespace std;
 class Tractor : public Process
 {
 private: 
-    int maxCapacity;
-    int currentCapacity;
     double maxSpeed;
     bool shiftEnded;
     Field* currentField;
 public:
+    int maxCapacity;
+    int currentCapacity;
     Tractor(int maxCapacity, double maxSpeed);
     void Behavior() override;
     bool isFull();
     void endShift();
     void goToField();
     void emptyTractor();
+    void endEmptying();
 };
 
 
