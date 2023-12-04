@@ -1,0 +1,41 @@
+#ifndef SEASON_H
+#define SEASON_H
+
+#include <queue>
+#include <list>
+#include <fstream>
+#include <string>
+#include <iostream>
+
+#include "simlib.h"
+#include "Field.h"
+#include "Tractor.h"
+#include "Harvester.h"
+#include "Day.h"
+
+using namespace std;
+
+class Season : public Event
+{
+private:
+    int numberOfDays;
+    int numberOfRainyDays;
+public:
+    Season();
+    void Behavior() override;
+};
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#endif // !SEASON_H
