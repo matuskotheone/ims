@@ -19,7 +19,7 @@ void Day::Behavior()
     }
     for(const auto& tractor : tractors)
     {
-        tractor->activate();
+        tractor->Activate();
     } 
     for(const auto& harvester : harvesters)
     {

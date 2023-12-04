@@ -11,15 +11,16 @@
 #include <vector>
 #include <queue>
 
-
-#include "Tractor.h"
 #include "Field.h"
-
-
-
 #include "simlib.h"
 
+#include "Tractor.h"
+#include "Harvester.h"
+
 using namespace std;
+
+class Tractor;
+
 
 class Harvester : public Process
 {
@@ -45,33 +46,3 @@ public:
 
 
 #endif // !HARVESTER_H
-       //
-       //
-       //
-       //
-       //
-       //
-       //
-       //
-       //
-       //
-       //
-       //
-       //
-       //
-       //
-       //
-       //
-       //
-       //
-       //
-       //
-       //
-       //
-       //
-       //
-       //
-       //
-       //
-       //
-       //

@@ -29,7 +29,7 @@ void Harvester::Behavior()
         {
             break;
         }
-        if (isFull() && endShift)
+        if (isFull() && shiftEnded)
         {
             break;
         }

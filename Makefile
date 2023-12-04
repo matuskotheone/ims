@@ -1,12 +1,37 @@
+# Compiler settings - Can be customized.
 CC=g++
-FLAGS = -std=c++11 -Wall -Wextra -pedantic -L. -lsimlib -lm
-PROJ_NAME=ims
+CFLAGS=-Wall -g
+LIBS=-lsimlib
 
-all:
-	$(CC) $(FLAGS) *.cpp -o $(PROJ_NAME)
+# Define the target executable
+TARGET=a.out
 
-run:
-	./ims
+# List of source files
+SOURCES=Day.cpp Field.cpp Harvester.cpp listFile.cpp main.cpp Season.cpp Tractor.cpp test.cpp
+# Corresponding object files
+OBJECTS=$(SOURCES:.cpp=.o)
 
+# First target - default
+all: $(TARGET)
+
+# Link the target with all objects
+$(TARGET): $(OBJECTS)
+	$(CC) $(CFLAGS) -o $(TARGET) $(OBJECTS) $(LIBS)
+
+# Compile source files into objects
+%.o: %.cpp
+	$(CC) $(CFLAGS) -c $< -o $@
+
+# Clean the build
 clean:
-	rm $(PROJ_NAME)
+	rm -f $(TARGET) $(OBJECTS)
+
+# Additional dependencies
+Day.o: Day.h
+Field.o: Field.h
+Harvester.o: Harvester.h
+listFile.o: listFile.h
+Season.o: Season.h
+Tractor.o: Tractor.h
+test.o: test.cpp
+

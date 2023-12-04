@@ -15,7 +15,6 @@
 #include "Harvester.h"
 #include "Field.h"
 
-
 #include "simlib.h"
 
 #define KG_WHEAT_PER_M2 4 
@@ -23,6 +22,8 @@
 #define TIME_TO_GET_TO_HARVESTER 4
 #define WORK_TIME 480
 
+class Tractor;
+class Harvester;
 
 using namespace std;
 
@@ -40,4 +41,3 @@ extern queue<Harvester*> *harvestersQueue;
 
 
 #endif // LISTFILE_H
-

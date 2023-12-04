@@ -1,3 +1,6 @@
+#ifndef DAY_H
+#define DAY_H
+
 #include <queue>
 #include <list>
 #include <iostream>
@@ -15,41 +18,16 @@
 #include "Field.h"
 #include "listFile.h"
 
+class Season;
+
 using namespace std;
 
 class Day : public Process 
 {
-public:
-    Day();
-    void Behavior() override;
+    public:
+        Day();
+        ~Day();
+        void Behavior() override;
 };
 
-
-    
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+#endif

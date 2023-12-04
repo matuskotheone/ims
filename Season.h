@@ -13,6 +13,8 @@
 #include "Harvester.h"
 #include "Day.h"
 
+class Day;
+
 using namespace std;
 
 class Season : public Event
@@ -24,18 +26,4 @@ public:
     Season();
     void Behavior() override;
 };
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 #endif // !SEASON_H

@@ -65,5 +65,3 @@ void Tractor::endEmptying()
 {
     Wait(TIME_TO_GET_TO_HARVESTER);
 }
-
-
