@@ -28,6 +28,7 @@ class Day : public Process
         Day();
         ~Day();
         void Behavior() override;
+        static void EndShifts();
 };
 
 #endif

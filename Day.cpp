@@ -13,46 +13,41 @@ Day::~Day()
 
 void Day::Behavior()
 {
-    cout << "Day started" << endl;
-    if (fieldsQueue.empty())
-    {
-        cout << "no fields" << endl;
-        return;
-    }
+    cout << "Day " << (Time/60/24) << endl;
     if (fieldsQueue.front()->isHarvested())
     {
-        cout << "pole skoncene" << endl;
+        cout << "pupujem" << endl;
         fieldsQueue.pop();
+    }
+    if (fieldsQueue.empty())
+    {
+        cout << "nothing to do" << endl;
+        return;
     }
     for(const auto& tractor : tractors)
     {
-        cout << "aktivate tractor" << endl;
         tractor->Activate();
-        cout << "traktor activated" << endl;
 
     } 
     for(const auto& harvester : harvesters)
     {
-        cout << "aktivate harvester" << endl;
         harvester->Activate();
-        cout << "harvester activated" << endl;
     }
-
-    cout << "wait for work time" << endl;
     Wait(WORK_TIME);
-    cout << "work time over" << endl;
+    cout << "padla ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^" << endl;
+    EndShifts();
+}
 
+
+void Day::EndShifts (){
     for(const auto& tractor : tractors)
     {
-        cout << "end shift tractor" << endl;
         tractor->endShift();
-        cout << "tractor shift ended" << endl;
     }
     for(const auto& harvester : harvesters)
     {
-        cout << "end shift harvester" << endl;
         harvester->endShift();
-        cout << "harvester shift ended" << endl;
     }
 }
+
 

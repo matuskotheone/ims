@@ -12,19 +12,25 @@ Season::Season()
 
 void Season::Behavior()
 {
+    cout << "kajlshdflkjashdflkjashdflkjashdflkjah" << endl;
+    if (fieldsQueue.empty())
+    {
+        cout << "Konec sezony" << endl;
+        endSeason = true;
+        Tractor::ReleaseTractors();
+        return;
+    }
     if (Random() > RAIN_CHANCE)
     {
-        cout << "zapinam den" << endl;
         (new Day())->Activate();
     }
     else 
     {
+        cout << "prsi prsi prsi prsi prsi" << endl;
         numberOfRainyDays++;
     }
 
     numberOfDays++;
-    cout << "pocet dazdivych dni: " << numberOfRainyDays << endl;
-    Activate(HOUR_TO_MIN(24));
-    cout << "koniec dna" << endl;
+    Activate(Time + (60*24));
 }
 

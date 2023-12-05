@@ -19,6 +19,8 @@ class Harvester;
 
 using namespace std;
 
+extern int caka;
+
 class Tractor : public Process
 {
     private: 
@@ -28,7 +30,8 @@ class Tractor : public Process
     public:
         int maxCapacity;
         int currentCapacity;
-        Tractor(double maxSpeed, int maxCapacity);
+        Tractor(double maxSpeed, int maxCapacity, int ID);
+        int ID;
         void Behavior() override;
         bool isReleased;
         bool isFull();

@@ -36,6 +36,8 @@ int main(void)
     tractorsQueue = queue <Tractor*>();
     harvestersQueue = queue <Harvester*>();
 
+    int trak = 0;
+    int harv = 0;
 
 
     string line;
@@ -55,14 +57,14 @@ int main(void)
         {
             int speed, maxCapacity;
             sscanf(line.c_str(), "T %d %d", &speed, &maxCapacity);
-            Tractor *t = new Tractor(speed, TON_TO_KG(maxCapacity));
+            Tractor *t = new Tractor(speed, TON_TO_KG(maxCapacity), trak++);
             tractors.insert(t);
         }
         else if (line[0] == 'H')
         {
             int maxSpeed, harvestSpeed, maxCapacity;
             sscanf(line.c_str(), "H %d %d %d", &maxSpeed, &harvestSpeed, &maxCapacity);
-            Harvester *h = new Harvester(maxSpeed, harvestSpeed, TON_TO_KG(maxCapacity));
+            Harvester *h = new Harvester(maxSpeed, harvestSpeed, TON_TO_KG(maxCapacity), harv++);
             harvesters.insert(h);
         }
         //if the line is just white characters, skip it
@@ -76,8 +78,8 @@ int main(void)
         }
     }
 
-    Init(0, 10000);
-    SetStep(0.1);
+    Init(0, 100000);
+    SetStep(0.001);
     (new Season())->Activate();
     Run();
 }

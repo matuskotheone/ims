@@ -16,10 +16,12 @@
 
 #include "Tractor.h"
 #include "Harvester.h"
+#include "Day.h"
 
 using namespace std;
 
 class Tractor;
+class Day;
 
 
 class Harvester : public Process
@@ -37,9 +39,12 @@ private:
     void emptyHarvester();
 public:
     bool isFull();
+    int ID;
     // hervestee speed 8m2/min 
-    Harvester(int streetSpeed, int harvestSpeed, int maxCapacity);
+    Harvester(int streetSpeed, int harvestSpeed, int maxCapacity, int ID);
     void Behavior() override;
+    static void endHarvestSeason();
+
     void endShift();
 
 };

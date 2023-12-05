@@ -1,16 +1,19 @@
 #include "Harvester.h"
 
-Harvester::Harvester(int streetSpeed, int harvestSpeed, int maxCapacity)
+
+Harvester::Harvester(int streetSpeed, int harvestSpeed, int maxCapacity, int ID)
 {
     this->streetSpeed = streetSpeed;
     this->harvestSpeed = harvestSpeed;
     this->maxCapacity = maxCapacity;
     this->currentCapacity = 0;
     this->currentField = nullptr;
+    this->ID = ID;
 }
 
 void Harvester::Behavior()
 {
+newDay:
     harvestersWait.clear();
     harvestersQueue = queue<Harvester*>();
     tractor = nullptr;
@@ -18,6 +21,8 @@ void Harvester::Behavior()
     currentCapacity = 0;
 
     currentField = fieldsQueue.front();
+    cout << " pole este treba " << currentField->notHarvested << endl;
+    cout << " z  " << currentField->area << endl;
 
     goToField();
     while (1)
@@ -29,11 +34,14 @@ void Harvester::Behavior()
         }
         if (currentField->isHarvested())
         {
+            cout << "field is harvested(((((((((((((((((((((((((((((((((((((((((((" << endl;
+            cout << "time is: " << (int(Time/60))%24 << endl;
+            Day::EndShifts();
             break;
         }
         if (isFull() && shiftEnded)
         {
-            cout << "Harvester ended shift" << endl;
+            cout << "Harvester ended shift***************************************" << endl;
             break;
         }
 again:
@@ -49,13 +57,16 @@ again:
             else
             {
                 tractor = tractorsQueue.front();
+                tractorsQueue.pop();
                 tractorsWait.erase(tractor);
             }
             emptyHarvester();
         }
     }
     Tractor::ReleaseTractors();
-    cout << "#####################################################harvester leaving field" << endl;
+    Passivate();
+    if (!endSeason)
+        goto newDay;
 }
 
 void Harvester::goToField()
@@ -80,19 +91,36 @@ void Harvester::endShift()
     shiftEnded = true;
 }
 
+void Harvester::endHarvestSeason()
+{
+    for (const auto& harvester : harvesters)
+    {
+        harvester->endShift();
+        harvester->Activate();
+    }
+}
+
 void Harvester::emptyHarvester()
 {
     Wait(TIME_TO_GET_TO_HARVESTER);
     for (int i = 0; i < TIMETOEMPTY; i++)
     {
-        cout << "asdhlkjfffffakjfalsdhfkjhasldkfjhasdlkjfhaslkdjfhaslkdjfhashdjkf" << endl;
         Wait(1);
         currentCapacity -= maxCapacity / TIMETOEMPTY;
-        cout << "current capacity: " << currentCapacity << endl;
-        cout << "max capacity: " << maxCapacity << endl;
         tractor->fillTractor(maxCapacity / TIMETOEMPTY);
         if (currentCapacity <= 0)
         {
+            /*
+            cout << "##################################################################################" << endl;
+            cout << "harvester ID is: " << ID << endl;
+            cout << "harvester capacity is: " << currentCapacity << endl;
+            cout << "out of " << maxCapacity << endl;
+            cout << "tractor ID is: " << tractor->ID << endl;
+            cout << "tractor capacity is: " << tractor->currentCapacity << endl;
+            cout << "out of " << tractor->maxCapacity << endl;
+            cout << "harvester is empty" << endl;
+            cout << "##################################################################################" << endl;
+            */
             currentCapacity = 0;
             break;
         }
@@ -102,8 +130,7 @@ void Harvester::emptyHarvester()
             break;
         }
     }
+    cout << "Harvester ended emptying" << endl;
     tractor->endEmptying();
     tractor = nullptr;
-    cout << "kapacita po vyprazdneni: " << currentCapacity << endl;
-    cout << "mac capacity: " << maxCapacity << endl;
 }

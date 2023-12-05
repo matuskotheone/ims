@@ -40,6 +40,8 @@ extern set <Harvester*> harvestersWait;
 extern queue<Tractor*> tractorsQueue;
 extern queue<Harvester*> harvestersQueue;
 
+extern bool endSeason;
+
 
 
 #endif // LISTFILE_H

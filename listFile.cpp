@@ -12,3 +12,5 @@ set <Harvester*> harvestersWait;
 
 queue<Tractor*> tractorsQueue;
 queue<Harvester*> harvestersQueue;
+
+bool endSeason = false;
