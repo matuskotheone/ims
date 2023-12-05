@@ -25,5 +25,6 @@ private:
 public:
     Season();
     void Behavior() override;
+    void PrintStats();
 };
 #endif // !SEASON_H

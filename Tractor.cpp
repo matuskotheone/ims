@@ -12,7 +12,7 @@ Tractor::Tractor(double maxSpeed, int maxCapacity, int ID)
 
 bool Tractor::isFull()
 {
-    return this->currentCapacity >= this->maxCapacity;
+    return this->currentCapacity >= (this->maxCapacity) * 0.9;
 }
 
 
@@ -27,6 +27,7 @@ novyDen:
     shiftEnded = false;
     currentField = fieldsQueue.front();
     goToField();
+
     while (true)
     {
         if (isFull() && !shiftEnded)
@@ -53,13 +54,18 @@ novyDen:
             harvestersWait.erase(harvester);
             harvester->Activate();
         }
+        /*
         cout << "Traktor : " << ID << " caka " << endl;
         cout << "quque size : " << tractorsQueue.size() << endl;
         cout << "wait size : " << tractorsWait.size() << endl;
         cout << "caka na konci " << caka << endl;
+        */
 
         
+        cout << "Traktor : " << ID << " caka " << endl;
+        double time = Time;
         Passivate();
+        timeTractorsWait += Time - time;
 
         if (shiftEnded)
         {
@@ -84,7 +90,7 @@ void Tractor::fillTractor(int ammount)
 
 void Tractor::emptyTractor()
 {
-    Wait(currentField->distance / maxSpeed);
+    Wait(60*(double(currentField->distance) / double(maxSpeed)));
     currentCapacity = 0;
     Wait(currentField->distance / maxSpeed);
 }

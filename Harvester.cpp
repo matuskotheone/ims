@@ -49,13 +49,21 @@ again:
         {
             if (tractorsQueue.empty() && !(harvestersWait.find(this)!=harvestersWait.end()))
             {
+
                 harvestersWait.insert(this);
                 harvestersQueue.push(this);
+                cout << "harvester " << ID << " is waiting for tractor" << endl;
+                double time = Time;
                 Passivate();
+                Wait(1);
+                timeHarvestersWait += (Time - time);
                 goto again;
             }
             else
             {
+                cout << "harvester " << ID << " is waiting for tractor" << endl;
+                cout << "size of queue is " << tractorsQueue.size() << endl;
+                cout << "size of wait is " << tractorsWait.size() << endl;
                 tractor = tractorsQueue.front();
                 tractorsQueue.pop();
                 tractorsWait.erase(tractor);
@@ -102,7 +110,22 @@ void Harvester::endHarvestSeason()
 
 void Harvester::emptyHarvester()
 {
+    double time = Time;
     Wait(TIME_TO_GET_TO_HARVESTER);
+
+    cout << "tu som este " << endl;
+    cout << tractor<< endl;
+    if (tractor == nullptr)
+    {
+        cout << "tractor is nullptr" << endl;
+        return;
+    }
+
+    cout << "tu som " << endl;
+    cout << tractor->ID << endl; 
+
+    cout << "into tractor " << tractor->ID << endl;
+
     for (int i = 0; i < TIMETOEMPTY; i++)
     {
         Wait(1);
@@ -110,27 +133,16 @@ void Harvester::emptyHarvester()
         tractor->fillTractor(maxCapacity / TIMETOEMPTY);
         if (currentCapacity <= 0)
         {
-            /*
-            cout << "##################################################################################" << endl;
-            cout << "harvester ID is: " << ID << endl;
-            cout << "harvester capacity is: " << currentCapacity << endl;
-            cout << "out of " << maxCapacity << endl;
-            cout << "tractor ID is: " << tractor->ID << endl;
-            cout << "tractor capacity is: " << tractor->currentCapacity << endl;
-            cout << "out of " << tractor->maxCapacity << endl;
-            cout << "harvester is empty" << endl;
-            cout << "##################################################################################" << endl;
-            */
             currentCapacity = 0;
             break;
         }
         if (tractor->isFull())
         {
-            cout << "tractor is full" << endl;
             break;
         }
     }
-    cout << "Harvester ended emptying" << endl;
+
+    timeTractorsWait -= Time - time - TIME_TO_GET_TO_HARVESTER;
     tractor->endEmptying();
     tractor = nullptr;
 }

@@ -19,7 +19,7 @@
 
 #define KG_WHEAT_PER_M2 4 
 #define TIMETOEMPTY 8
-#define TIME_TO_GET_TO_HARVESTER 4
+#define TIME_TO_GET_TO_HARVESTER 10
 #define WORK_TIME 480
 #define AR_TO_M2(x) (x*100)
 #define TON_TO_KG(x) (x*1000)
@@ -39,6 +39,9 @@ extern set <Harvester*> harvestersWait;
 
 extern queue<Tractor*> tractorsQueue;
 extern queue<Harvester*> harvestersQueue;
+
+extern int timeHarvestersWait;
+extern int timeTractorsWait;
 
 extern bool endSeason;
 

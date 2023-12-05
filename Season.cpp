@@ -8,6 +8,7 @@ class Day;
 Season::Season()
 {
     this->numberOfDays = 0;
+    this->numberOfRainyDays = 0;
 }
 
 void Season::Behavior()
@@ -16,6 +17,7 @@ void Season::Behavior()
     if (fieldsQueue.empty())
     {
         cout << "Konec sezony" << endl;
+        PrintStats();
         endSeason = true;
         Tractor::ReleaseTractors();
         return;
@@ -34,3 +36,12 @@ void Season::Behavior()
     Activate(Time + (60*24));
 }
 
+
+void Season::PrintStats()
+{
+    cout << "Pocet dnu: " << numberOfDays-1 << endl;
+    cout << "Pocet destivych dnu: " << numberOfRainyDays << endl;
+    cout << "Pocet slunecnych dnu: " << (numberOfDays-1) - numberOfRainyDays << endl;
+    cout << "cas harvestery cakali: " << timeHarvestersWait / 60 << endl;
+    cout << "cas traktoru cakali: " << timeTractorsWait / 60 << endl;
+}

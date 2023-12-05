@@ -24,6 +24,9 @@ int main(void)
 {
     ifstream file;
 
+    RandomSeed(time(nullptr));
+
+
     file.open("farma.txt");
 
     if (!file.is_open())
