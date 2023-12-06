@@ -32,9 +32,7 @@ novyDen:
     {
         if (isFull() && !shiftEnded)
         {
-            cout << "idem vyprazdnovat" << endl;
             emptyTractor();
-            cout << "vyprazdnil som" << endl;
             if (shiftEnded)
             {
                 break;
@@ -55,21 +53,15 @@ novyDen:
             harvester->Activate();
         }
         /*
-        cout << "Traktor : " << ID << " caka " << endl;
-        cout << "quque size : " << tractorsQueue.size() << endl;
-        cout << "wait size : " << tractorsWait.size() << endl;
-        cout << "caka na konci " << caka << endl;
         */
 
         
-        cout << "Traktor : " << ID << " caka " << endl;
         double time = Time;
         Passivate();
         timeTractorsWait += Time - time;
 
         if (shiftEnded)
         {
-            cout << "shift ended" << endl;
             break;
         }
         endEmptying();
@@ -114,8 +106,6 @@ void Tractor::ReleaseTractors()
         {
             continue;
         }
-        cout << "&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&"<< endl;
-        cout << "releasing tractor "<< tractor->ID  << endl;
         tractor->isReleased = true;
         tractor->endShift();
         tractor->Activate();

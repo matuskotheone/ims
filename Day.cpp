@@ -13,15 +13,12 @@ Day::~Day()
 
 void Day::Behavior()
 {
-    cout << "Day " << (Time/60/24) << endl;
     if (fieldsQueue.front()->isHarvested())
     {
-        cout << "pupujem" << endl;
         fieldsQueue.pop();
     }
     if (fieldsQueue.empty())
     {
-        cout << "nothing to do" << endl;
         return;
     }
     for(const auto& tractor : tractors)
@@ -34,7 +31,6 @@ void Day::Behavior()
         harvester->Activate();
     }
     Wait(WORK_TIME);
-    cout << "padla ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^" << endl;
     EndShifts();
 }
 

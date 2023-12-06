@@ -21,8 +21,6 @@ newDay:
     currentCapacity = 0;
 
     currentField = fieldsQueue.front();
-    cout << " pole este treba " << currentField->notHarvested << endl;
-    cout << " z  " << currentField->area << endl;
 
     goToField();
     while (1)
@@ -34,14 +32,11 @@ newDay:
         }
         if (currentField->isHarvested())
         {
-            cout << "field is harvested(((((((((((((((((((((((((((((((((((((((((((" << endl;
-            cout << "time is: " << (int(Time/60))%24 << endl;
             Day::EndShifts();
             break;
         }
         if (isFull() && shiftEnded)
         {
-            cout << "Harvester ended shift***************************************" << endl;
             break;
         }
 again:
@@ -52,7 +47,6 @@ again:
 
                 harvestersWait.insert(this);
                 harvestersQueue.push(this);
-                cout << "harvester " << ID << " is waiting for tractor" << endl;
                 double time = Time;
                 Passivate();
                 Wait(1);
@@ -61,9 +55,6 @@ again:
             }
             else
             {
-                cout << "harvester " << ID << " is waiting for tractor" << endl;
-                cout << "size of queue is " << tractorsQueue.size() << endl;
-                cout << "size of wait is " << tractorsWait.size() << endl;
                 tractor = tractorsQueue.front();
                 tractorsQueue.pop();
                 tractorsWait.erase(tractor);
@@ -113,18 +104,12 @@ void Harvester::emptyHarvester()
     double time = Time;
     Wait(TIME_TO_GET_TO_HARVESTER);
 
-    cout << "tu som este " << endl;
-    cout << tractor<< endl;
     if (tractor == nullptr)
     {
-        cout << "tractor is nullptr" << endl;
         return;
     }
 
-    cout << "tu som " << endl;
-    cout << tractor->ID << endl; 
 
-    cout << "into tractor " << tractor->ID << endl;
 
     for (int i = 0; i < TIMETOEMPTY; i++)
     {

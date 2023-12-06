@@ -13,10 +13,8 @@ Season::Season()
 
 void Season::Behavior()
 {
-    cout << "kajlshdflkjashdflkjashdflkjashdflkjah" << endl;
     if (fieldsQueue.empty())
     {
-        cout << "Konec sezony" << endl;
         PrintStats();
         endSeason = true;
         Tractor::ReleaseTractors();
@@ -28,7 +26,6 @@ void Season::Behavior()
     }
     else 
     {
-        cout << "prsi prsi prsi prsi prsi" << endl;
         numberOfRainyDays++;
     }
 
