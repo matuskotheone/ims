@@ -20,6 +20,10 @@ int KG_WHEAT_PER_M2 = 4;
 int TIMETOEMPTY = 8;
 int TIME_TO_GET_TO_HARVESTER = 10;
 int WORK_TIME = 480;
+int TIME_TO_EMPTY_TRACTOR = 5;
+
+Facility tractorEmptyFac;
+Facility help;
 
 
 bool endSeason = false;

@@ -29,6 +29,7 @@ extern int KG_WHEAT_PER_M2;
 extern int TIMETOEMPTY;
 extern int TIME_TO_GET_TO_HARVESTER;
 extern int WORK_TIME;
+extern int TIME_TO_EMPTY_TRACTOR;
 
 extern queue<Field*> fieldsQueue;
 
@@ -43,6 +44,10 @@ extern queue<Harvester*> harvestersQueue;
 
 extern int timeHarvestersWait;
 extern int timeTractorsWait;
+
+extern Facility help;
+
+extern Facility tractorEmptyFac;
 
 extern bool endSeason;
 

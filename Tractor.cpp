@@ -82,8 +82,10 @@ void Tractor::fillTractor(int ammount)
 
 void Tractor::emptyTractor()
 {
+    //Seize(tractorEmptyFac);
     Wait(60*(double(currentField->distance) / double(maxSpeed)));
     currentCapacity = 0;
+    //Release(tractorEmptyFac);
     Wait(currentField->distance / maxSpeed);
 }
 

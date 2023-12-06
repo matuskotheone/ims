@@ -42,22 +42,30 @@ newDay:
 again:
         if (isFull())
         {
-            if (tractorsQueue.empty() && !(harvestersWait.find(this)!=harvestersWait.end()))
+            if (tractorsQueue.empty()) 
             {
-
-                harvestersWait.insert(this);
-                harvestersQueue.push(this);
+                if(!(harvestersWait.find(this)!=harvestersWait.end()))
+                {
+                    harvestersWait.insert(this);
+                    harvestersQueue.push(this);
+                }
                 double time = Time;
                 Passivate();
-                Wait(1);
                 timeHarvestersWait += (Time - time);
                 goto again;
             }
             else
             {
+                Seize(help);
+                if (tractorsQueue.empty())
+                {
+                    Release(help);
+                    goto again;
+                }
                 tractor = tractorsQueue.front();
                 tractorsQueue.pop();
                 tractorsWait.erase(tractor);
+                Release(help);
             }
             emptyHarvester();
         }
@@ -108,8 +116,6 @@ void Harvester::emptyHarvester()
     {
         return;
     }
-
-
 
     for (int i = 0; i < TIMETOEMPTY; i++)
     {

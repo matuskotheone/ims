@@ -2,23 +2,14 @@
 #T speed(in kilometers per hour) capacity(in tons)
 #H speed(in kilometers per hour) harvestspeed(in m2 per minute) capacity(in tons)
 
-F 600 60
 F 2000 60
 F 2000 60
 F 2000 60
 F 2000 60
-F 2000 60
-F 2000 60
-T 40 100
-T 40 100
-T 40 100
-T 40 100
-H 20 100 50
-H 20 100 50
-H 20 100 50
-H 20 100 50
-H 20 100 50
-H 20 100 50
-H 20 100 50
-
-
+T 40 20
+T 40 20
+T 40 20
+T 40 20
+H 20 600 7
+H 20 600 7
+H 20 600 7
