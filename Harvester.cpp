@@ -142,6 +142,6 @@ void Harvester::emptyHarvester()
 
     // count the time the tractor waited for the harvester
     timeTractorsWait -= Time - time - TIME_TO_GET_TO_HARVESTER;
-    tractor->endEmptying();// signal the tractor that it is done emptying
+    tractor->Activate();
     tractor = nullptr;
 }

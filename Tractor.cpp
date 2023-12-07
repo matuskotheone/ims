@@ -63,13 +63,13 @@ novyDen:
         
         double time = Time;
         Passivate();// wait for the harvester to take the tractor from queue fill it and release it 
+        endEmptying();
         timeTractorsWait += Time - time;
 
         if (shiftEnded)
         {
             break;
         }
-        endEmptying();
     }
     Passivate();// wait for the next day
     if (!endSeason)
@@ -89,7 +89,7 @@ void Tractor::emptyTractor()
     Wait(60*(double(currentField->distance) / double(maxSpeed)));
     currentCapacity = 0;
     //Release(tractorEmptyFac);
-    Wait(currentField->distance / maxSpeed);
+    Wait(60*(double(currentField->distance) / double(maxSpeed)));
 }
 
 
