@@ -1,6 +1,6 @@
 #include "Season.h"
 
-#define RAIN_CHANCE 0.1
+#define RAIN_CHANCE 0.3
 #define HOUR_TO_MIN(x) x*60
 
 class Day;

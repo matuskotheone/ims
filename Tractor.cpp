@@ -13,7 +13,7 @@ Tractor::Tractor(double maxSpeed, int maxCapacity, int ID)
 bool Tractor::isFull()
 {
     // if the tractor is filled to at least 90% of its capacity
-    return this->currentCapacity >= (this->maxCapacity) * 0.9;
+    return this->currentCapacity >= (this->maxCapacity) * 0.8;
 }
 
 
@@ -86,16 +86,16 @@ void Tractor::fillTractor(int ammount)
 void Tractor::emptyTractor()
 {
     //Seize(tractorEmptyFac);
-    Wait(60*(double(currentField->distance) / double(maxSpeed)));
+    goToField();
     currentCapacity = 0;
     //Release(tractorEmptyFac);
-    Wait(60*(double(currentField->distance) / double(maxSpeed)));
+    goToField();
 }
 
 
 void Tractor::goToField()
 {
-    Wait(currentField->distance / maxSpeed);
+    Wait(60*(double(currentField->distance) / double(maxSpeed)));
 }
 
 void Tractor::endShift()

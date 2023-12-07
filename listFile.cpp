@@ -19,7 +19,7 @@ int timeTractorsWait = 0;
 double KG_WHEAT_PER_M2 = 0.4;
 int TIMETOEMPTY = 8;
 int TIME_TO_GET_TO_HARVESTER = 10;
-int WORK_TIME = 480;
+int WORK_TIME = 600;
 int TIME_TO_EMPTY_TRACTOR = 5;
 
 Facility tractorEmptyFac;
