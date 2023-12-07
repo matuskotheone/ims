@@ -90,7 +90,7 @@ void Harvester::harvest()
 {
     Wait(1);
     currentField->harvest(harvestSpeed);
-    currentCapacity+= KG_WHEAT_PER_M2 * harvestSpeed;
+    currentCapacity += KG_WHEAT_PER_M2 * harvestSpeed;
 }
 
 void Harvester::endShift()

@@ -16,7 +16,7 @@ queue<Harvester*> harvestersQueue;
 int timeHarvestersWait = 0;
 int timeTractorsWait = 0;
 
-int KG_WHEAT_PER_M2 = 4;
+double KG_WHEAT_PER_M2 = 0.4;
 int TIMETOEMPTY = 8;
 int TIME_TO_GET_TO_HARVESTER = 10;
 int WORK_TIME = 480;

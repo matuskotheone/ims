@@ -25,7 +25,7 @@ class Harvester;
 
 using namespace std;
 
-extern int KG_WHEAT_PER_M2;
+extern double KG_WHEAT_PER_M2;
 extern int TIMETOEMPTY;
 extern int TIME_TO_GET_TO_HARVESTER;
 extern int WORK_TIME;
