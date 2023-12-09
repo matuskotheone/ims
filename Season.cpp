@@ -55,6 +55,5 @@ void Season::PrintStats()
     cout << "Pocet dnu: " << numberOfDays-1 << endl;
     cout << "Pocet destivych dnu: " << numberOfRainyDays << endl;
     cout << "Pocet slunecnych dnu: " << (numberOfDays-1) - numberOfRainyDays << endl;
-    cout << "cas harvestery cakali: " << timeHarvestersWait / 60<< " hodin" << endl;
-    cout << "cas traktoru cakali: " << timeTractorsWait / 60 <<" hodin" << endl;
+    cout << "Priemerna doba cakania harvesteru v 1 den na poli: " << (timeHarvestersWait / 60)/(float)harvestersData.size() << " minut" << endl;
 }
