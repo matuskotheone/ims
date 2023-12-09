@@ -4,7 +4,7 @@ CFLAGS=-Wall -g
 LIBS=-lsimlib
 
 # Define the target executable
-TARGET=a.out
+TARGET=ims_project
 
 # List of source files
 SOURCES=Day.cpp Field.cpp Harvester.cpp listFile.cpp main.cpp Season.cpp Tractor.cpp test.cpp Stats.cpp
