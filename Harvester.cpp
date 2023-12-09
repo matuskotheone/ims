@@ -51,22 +51,22 @@ again:
                 double time = Time;
                 Passivate();// waiting
                 timeHarvestersWait += (Time - time);
-                goto again; // again check if there are tractors waiting
+                //goto again; // again check if there are tractors waiting
             }
-            else
-            {
+            //else
+            //{
                 // if there are tractors waiting for harvester then get the first one
-                Seize(help);// so the deadolock does not happen
-                if (tractorsQueue.empty())
-                {
-                    Release(help);
-                    goto again;
-                }
-                tractor = tractorsQueue.front();
-                tractorsQueue.pop();
-                tractorsWait.erase(tractor);
+            Seize(help);// so the deadolock does not happen
+            if (tractorsQueue.empty())
+            {
                 Release(help);
+                goto again;
             }
+            tractor = tractorsQueue.front();
+            tractorsQueue.pop();
+            tractorsWait.erase(tractor);
+            Release(help);
+            //}
             emptyHarvester(); // empty the harvester
             continue;
         }
