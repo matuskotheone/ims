@@ -25,11 +25,38 @@ class Harvester;
 
 using namespace std;
 
-extern double KG_WHEAT_PER_M2;
-extern int TIMETOEMPTY;
-extern int TIME_TO_GET_TO_HARVESTER;
-extern int WORK_TIME;
-extern int TIME_TO_EMPTY_TRACTOR;
+extern const double KG_WHEAT_PER_M2;
+extern const int TIMETOEMPTY;
+extern const int TIME_TO_GET_TO_HARVESTER;
+extern const int WORK_TIME;
+extern const int TIME_TO_EMPTY_TRACTOR;
+
+
+struct FieldData {
+    int area;
+    int distance;
+};
+typedef struct FieldData fieldData_t;
+
+struct TractorData {
+    int maxSpeed;
+    int maxCapacity;
+    int ID;
+};
+typedef struct TractorData tractorData_t;
+
+struct HarvesterData {
+    int maxSpeed;
+    int harvestSpeed;
+    int maxCapacity;
+    int ID;
+};
+typedef struct HarvesterData harvesterData_t;
+
+extern vector <fieldData_t> fieldsData;
+extern vector <tractorData_t> tractorsData;
+extern vector <harvesterData_t> harvestersData;
+
 
 extern queue<Field*> fieldsQueue;
 
@@ -38,6 +65,8 @@ extern set <Harvester*> harvesters;
 
 extern set <Tractor*> tractorsWait;
 extern set <Harvester*> harvestersWait;
+
+
 
 extern queue<Tractor*> tractorsQueue;
 extern queue<Harvester*> harvestersQueue;
@@ -50,6 +79,7 @@ extern Facility help;
 extern Facility tractorEmptyFac;
 
 extern bool endSeason;
+void reset();
 
 
 

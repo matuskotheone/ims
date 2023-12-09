@@ -19,6 +19,9 @@
 #include "listFile.h"
 
 class Season;
+class Tractor;
+class Harvester;
+class Field;
 
 using namespace std;
 

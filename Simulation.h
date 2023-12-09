@@ -1,5 +1,5 @@
-#ifndef SEASON_H
-#define SEASON_H
+#ifndef SIMULATION_H
+#define SIMULATION_H
 
 #include <queue>
 #include <list>
@@ -14,18 +14,27 @@
 #include "Harvester.h"
 #include "Day.h"
 
-class Day;
+class Season;
 
 using namespace std;
 
-class Season : public Event
+class Simulation : public Event
 {
 private:
-    int numberOfDays;
-    int numberOfRainyDays;
 public:
-    Season();
-    void Behavior() override;
-    void PrintStats();
-};
-#endif // !SEASON_H
+    
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

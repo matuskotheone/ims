@@ -13,7 +13,6 @@ Harvester::Harvester(int streetSpeed, int harvestSpeed, int maxCapacity, int ID)
 
 void Harvester::Behavior()
 {
-newDay:
     harvestersWait.clear(); // clear the set of harvesters waiting for tractors
     harvestersQueue = queue<Harvester*>(); // clear the queue of harvesters waiting for tractors
     tractor = nullptr; // clear the tractor
@@ -26,7 +25,6 @@ newDay:
     while (1)
     {
         if (!isFull() && !currentField->isHarvested()) // if the harvester is not full and the field is not harvested
-                                                       // yet then harvest
         {
             harvest();
             continue;
@@ -70,18 +68,25 @@ again:
                 Release(help);
             }
             emptyHarvester(); // empty the harvester
+            continue;
         }
+        cout << "ERROR" << endl;
+        cout << "isFull: " << isFull() << endl;
+        cout << "isHarvested: " << currentField->isHarvested() << endl;
+        cout << "shiftEnded: " << shiftEnded << endl;
+        cout << "curren capacity: " << currentCapacity << endl;
+        cout << "max capacity: " << maxCapacity << endl;
+        cout << "ID: " << ID << endl;
+        cout << "time: " << Time << endl;
+
     }
-    Tractor::ReleaseTractors(); // release tractors waiting for harvester
-    Passivate();
-    if (!endSeason) // if the season is not ended then go to the next day
-        goto newDay;
+    //Tractor::ReleaseTractors(); // release tractors waiting for harvester
 }
 
 void Harvester::goToField()
 {
     // go from the farm to the field
-    Wait(currentField->distance / streetSpeed);
+    Wait(Exponential(((double)currentField->distance / double(streetSpeed))*60));
 }
 
 bool Harvester::isFull()
@@ -115,7 +120,8 @@ void Harvester::emptyHarvester()
 {
     // empty the harvester
     double time = Time;
-    Wait(TIME_TO_GET_TO_HARVESTER);
+    double waitTime = Exponential(TIME_TO_GET_TO_HARVESTER);
+    Wait(waitTime);
 
     if (tractor == nullptr)
     {
@@ -141,7 +147,7 @@ void Harvester::emptyHarvester()
     }
 
     // count the time the tractor waited for the harvester
-    timeTractorsWait -= Time - time - TIME_TO_GET_TO_HARVESTER;
+    timeTractorsWait -= Time - time - waitTime;
     tractor->Activate();
     tractor = nullptr;
 }

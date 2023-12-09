@@ -7,7 +7,7 @@ LIBS=-lsimlib
 TARGET=a.out
 
 # List of source files
-SOURCES=Day.cpp Field.cpp Harvester.cpp listFile.cpp main.cpp Season.cpp Tractor.cpp test.cpp
+SOURCES=Day.cpp Field.cpp Harvester.cpp listFile.cpp main.cpp Season.cpp Tractor.cpp test.cpp Stats.cpp
 # Corresponding object files
 OBJECTS=$(SOURCES:.cpp=.o)
 
@@ -34,4 +34,5 @@ listFile.o: listFile.h
 Season.o: Season.h
 Tractor.o: Tractor.h
 test.o: test.cpp
+stats.o: Stats.h
 

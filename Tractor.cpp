@@ -19,7 +19,6 @@ bool Tractor::isFull()
 
 void Tractor::Behavior()
 {
-novyDen:
     isReleased = false;
 
     tractorsWait.clear();// clear the set of waiting tractors
@@ -71,11 +70,6 @@ novyDen:
             break;
         }
     }
-    Passivate();// wait for the next day
-    if (!endSeason)
-    {
-        goto novyDen;
-    }
 }
 
 void Tractor::fillTractor(int ammount)
@@ -95,7 +89,7 @@ void Tractor::emptyTractor()
 
 void Tractor::goToField()
 {
-    Wait(60*(double(currentField->distance) / double(maxSpeed)));
+    Wait(Exponential(60*(double(currentField->distance) / double(maxSpeed))));
 }
 
 void Tractor::endShift()
@@ -105,15 +99,26 @@ void Tractor::endShift()
 
 void Tractor::ReleaseTractors() // relsease all tractors that are waiting
 {
+    if (tractorsWait.empty())
+    {
+        return;
+    }
     for (Tractor* tractor : tractorsWait)
     {
+        if(tractor == nullptr)
+        {
+            continue;
+        }
         if (tractor->isReleased)
         {
             continue;
         }
         tractor->isReleased = true;
         tractor->endShift();
-        tractor->Activate();
+        if (tractor != nullptr)
+        {
+            tractor->Terminate();
+        }
     }
 }
 
@@ -122,5 +127,7 @@ void Tractor::ReleaseTractors() // relsease all tractors that are waiting
 
 void Tractor::endEmptying()
 {
-    Wait(TIME_TO_GET_TO_HARVESTER);
+    double waitTime = Exponential(TIME_TO_GET_TO_HARVESTER);
+    Wait(waitTime);
+    timeTractorsWait -= waitTime;
 }

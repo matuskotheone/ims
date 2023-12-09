@@ -1,5 +1,8 @@
 #include "Day.h"
 
+
+
+
 Day::Day()
 {
     //ctor
@@ -13,6 +16,8 @@ Day::~Day()
 
 void Day::Behavior()
 {
+    tractors.clear();
+    harvesters.clear();
     // if last day the field was harvested, pop it from the queue
     if (fieldsQueue.front()->isHarvested())
     {
@@ -24,15 +29,19 @@ void Day::Behavior()
         return;
     }
     // get the next field to harvest
-    for(const auto& tractor : tractors)
+    for(const auto& tractor : tractorsData)
     {
-        tractor->Activate();
-
+        Tractor* newTractor = new Tractor(tractor.maxSpeed, tractor.maxCapacity, tractor.ID);
+        tractors.insert(newTractor);
+        newTractor->Activate();
     } 
     // activate all the tractors
-    for(const auto& harvester : harvesters)
+    for(const auto& harvester : harvestersData)
     {
-        harvester->Activate();
+        Harvester* newHarvester = new Harvester(harvester.maxSpeed, harvester.harvestSpeed, harvester.maxCapacity, harvester.ID);
+        harvesters.insert(newHarvester);
+        newHarvester->Activate();
+        //(new Harvester(harvester.maxSpeed, harvester.harvestSpeed, harvester.maxCapacity, harvester.ID))->Activate();
     }
     Wait(WORK_TIME);
     EndShifts();

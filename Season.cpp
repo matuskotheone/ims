@@ -16,6 +16,21 @@ void Season::Behavior()
     if (fieldsQueue.empty()) // if there are no more fields to harvest end the simulation and print the results
     {
         PrintStats();
+        pocet_dni(numberOfDays-1);
+        pocet_dazd(numberOfRainyDays);
+        pocet_pracovnych_dni((numberOfDays-1) - numberOfRainyDays);
+
+        if (numberOfDays-1 == 0)
+        {
+            hodiny_harvester(0);
+            hodiny_traktor(0);
+        }
+        else
+        {
+            hodiny_harvester(((timeHarvestersWait / 60)/(numberOfDays-1))/(float)harvestersData.size());
+            hodiny_traktor(((timeTractorsWait / 60) / (numberOfDays-1))/(float)tractorsData.size());
+        }
+
         endSeason = true;
         Tractor::ReleaseTractors();
         return;
