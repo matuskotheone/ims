@@ -28,8 +28,15 @@ int main(void)
 
 
     file.open("farma.txt");
+    output.open("output.txt", ios::out);
 
     if (!file.is_open())
+    {
+        cout << "Chyba pri otvarani suboru" << endl;
+        return 1;
+    }
+
+    if (!output.is_open())
     {
         cout << "Chyba pri otvarani suboru" << endl;
         return 1;
@@ -114,9 +121,15 @@ int main(void)
         (new Season())->Activate();
         Run();
     }
+
+
     pocet_dni.Output();
     pocet_dazd.Output();
     pocet_pracovnych_dni.Output();
     hodiny_harvester.Output();
+
+
     //hodiny_traktor.Output();
+    file.close();
+    output.close();
 }

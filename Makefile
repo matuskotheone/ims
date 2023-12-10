@@ -22,6 +22,10 @@ $(TARGET): $(OBJECTS)
 %.o: %.cpp
 	$(CC) $(CFLAGS) -c $< -o $@
 
+
+run: $(TARGET)
+	./$(TARGET)
+
 # Clean the build
 clean:
 	rm -f $(TARGET) $(OBJECTS)

@@ -66,6 +66,7 @@ extern set <Harvester*> harvesters;
 extern set <Tractor*> tractorsWait;
 extern set <Harvester*> harvestersWait;
 
+extern ofstream output;
 
 
 extern queue<Tractor*> tractorsQueue;

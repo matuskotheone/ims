@@ -17,7 +17,7 @@ vector <fieldData_t> fieldsData;
 vector <tractorData_t> tractorsData;
 vector <harvesterData_t> harvestersData;
 
-
+ofstream output;
 
 Facility tractorEmptyFac;
 Facility help;
