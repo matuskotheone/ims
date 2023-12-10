@@ -111,6 +111,13 @@ int main(void)
     {
 
         reset();
+        tractorEmptyFac.Clear();
+        help.Clear();
+        fieldsQueue = queue <Field*>();
+        tractors.clear();
+        harvesters.clear();
+        tractorsQueue = queue <Tractor*>();
+        harvestersQueue = queue <Harvester*>();
         for (const auto& f : fields)
         {
             f->notHarvested = f->area;
