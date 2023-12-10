@@ -9,6 +9,7 @@ Harvester::Harvester(int streetSpeed, int harvestSpeed, int maxCapacity, int ID)
     this->currentCapacity = 0;
     this->currentField = nullptr;
     this->ID = ID;
+    this->shiftEnded = false;
 }
 
 void Harvester::Behavior()
@@ -78,9 +79,7 @@ again:
         cout << "max capacity: " << maxCapacity << endl;
         cout << "ID: " << ID << endl;
         cout << "time: " << Time << endl;
-
     }
-    //Tractor::ReleaseTractors(); // release tractors waiting for harvester
 }
 
 void Harvester::goToField()

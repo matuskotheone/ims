@@ -80,6 +80,8 @@ int main(void)
             data.maxSpeed = speed;
             data.maxCapacity = TON_TO_KG(maxCapacity);
             data.ID = trak++;
+	    if (data.ID > 4)
+		    cout << "askdjhfalskdjfhaslkdjfhaslkdjfh" << endl;
             tractorsData.push_back(data);
             //tractorsData.push_back(listFile(speed, maxCapacity));
             //Tractor *t = new Tractor(speed, TON_TO_KG(maxCapacity), trak++);
@@ -114,8 +116,8 @@ int main(void)
         tractorEmptyFac.Clear();
         help.Clear();
         fieldsQueue = queue <Field*>();
-        tractors.clear();
-        harvesters.clear();
+        //tractors.clear();
+        //harvesters.clear();
         tractorsQueue = queue <Tractor*>();
         harvestersQueue = queue <Harvester*>();
         for (const auto& f : fields)

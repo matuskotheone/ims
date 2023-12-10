@@ -32,7 +32,7 @@ void Season::Behavior()
         }
 
         endSeason = true;
-        Tractor::ReleaseTractors();
+        //Tractor::ReleaseTractors();
         return;
     }
     if (Random() > RAIN_CHANCE) // if it is not raining activate a new day

@@ -45,6 +45,8 @@ void Day::Behavior()
     }
     Wait(WORK_TIME);
     EndShifts();
+    Wait(200);
+    Tractor::ReleaseTractors();
 }
 
 
@@ -52,11 +54,16 @@ void Day::Behavior()
 void Day::EndShifts (){
     for(const auto& tractor : tractors)
     {
-        tractor->endShift();
+//	    cout << tractor->ID << endl;
+//
+	    if (tractor != nullptr && tractor->ID < 100)
+		tractor->endShift();
     }
     for(const auto& harvester : harvesters)
     {
-        harvester->endShift();
+	    //cout << harvester->ID << endl;
+	    if (harvester != nullptr && harvester->ID < 100)
+		harvester->endShift();
     }
 }
 

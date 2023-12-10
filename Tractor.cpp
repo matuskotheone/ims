@@ -8,6 +8,7 @@ Tractor::Tractor(double maxSpeed, int maxCapacity, int ID)
     this->maxSpeed = maxSpeed;
     this->currentCapacity = 0;
     this->ID = ID;
+    this->shiftEnded = false;
 }
 
 bool Tractor::isFull()
@@ -24,7 +25,6 @@ void Tractor::Behavior()
     tractorsWait.clear();// clear the set of waiting tractors
     tractorsQueue = queue<Tractor*>();// clear the queue of waiting tractors
     currentCapacity = 0; // reset the current capacity of the tractor
-    shiftEnded = false;// reset the shift ended flag
     currentField = fieldsQueue.front();// get the first field from the queue
     goToField();// go to the field
 

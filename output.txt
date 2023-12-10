@@ -1,400 +1,400 @@
-Pocet dnu: 12
+Pocet dnu: 16
+Pocet destivych dnu: 4
+Pocet slunecnych dnu: 12
+Priemerna doba cakania harvesteru v 1 den na poli: 3.33333 minut
+Pocet dnu: 14
 Pocet destivych dnu: 2
-Pocet slunecnych dnu: 10
-Priemerna doba cakania harvesteru v 1 den na poli: 4.4 minut
+Pocet slunecnych dnu: 12
+Priemerna doba cakania harvesteru v 1 den na poli: 4 minut
+Pocet dnu: 16
+Pocet destivych dnu: 3
+Pocet slunecnych dnu: 13
+Priemerna doba cakania harvesteru v 1 den na poli: 6.33333 minut
+Pocet dnu: 16
+Pocet destivych dnu: 4
+Pocet slunecnych dnu: 12
+Priemerna doba cakania harvesteru v 1 den na poli: 4 minut
+Pocet dnu: 20
+Pocet destivych dnu: 8
+Pocet slunecnych dnu: 12
+Priemerna doba cakania harvesteru v 1 den na poli: 7 minut
+Pocet dnu: 19
+Pocet destivych dnu: 7
+Pocet slunecnych dnu: 12
+Priemerna doba cakania harvesteru v 1 den na poli: 4.66667 minut
+Pocet dnu: 21
+Pocet destivych dnu: 9
+Pocet slunecnych dnu: 12
+Priemerna doba cakania harvesteru v 1 den na poli: 5 minut
+Pocet dnu: 17
+Pocet destivych dnu: 5
+Pocet slunecnych dnu: 12
+Priemerna doba cakania harvesteru v 1 den na poli: 4.66667 minut
+Pocet dnu: 19
+Pocet destivych dnu: 7
+Pocet slunecnych dnu: 12
+Priemerna doba cakania harvesteru v 1 den na poli: 6 minut
+Pocet dnu: 18
+Pocet destivych dnu: 6
+Pocet slunecnych dnu: 12
+Priemerna doba cakania harvesteru v 1 den na poli: 5 minut
+Pocet dnu: 19
+Pocet destivych dnu: 8
+Pocet slunecnych dnu: 11
+Priemerna doba cakania harvesteru v 1 den na poli: 3.66667 minut
+Pocet dnu: 17
+Pocet destivych dnu: 5
+Pocet slunecnych dnu: 12
+Priemerna doba cakania harvesteru v 1 den na poli: 5.66667 minut
+Pocet dnu: 17
+Pocet destivych dnu: 5
+Pocet slunecnych dnu: 12
+Priemerna doba cakania harvesteru v 1 den na poli: 4.66667 minut
+Pocet dnu: 15
+Pocet destivych dnu: 3
+Pocet slunecnych dnu: 12
+Priemerna doba cakania harvesteru v 1 den na poli: 5 minut
+Pocet dnu: 22
+Pocet destivych dnu: 10
+Pocet slunecnych dnu: 12
+Priemerna doba cakania harvesteru v 1 den na poli: 5.33333 minut
+Pocet dnu: 17
+Pocet destivych dnu: 5
+Pocet slunecnych dnu: 12
+Priemerna doba cakania harvesteru v 1 den na poli: 4.33333 minut
+Pocet dnu: 15
+Pocet destivych dnu: 3
+Pocet slunecnych dnu: 12
+Priemerna doba cakania harvesteru v 1 den na poli: 4.33333 minut
+Pocet dnu: 15
+Pocet destivych dnu: 3
+Pocet slunecnych dnu: 12
+Priemerna doba cakania harvesteru v 1 den na poli: 5.66667 minut
+Pocet dnu: 21
+Pocet destivych dnu: 9
+Pocet slunecnych dnu: 12
+Priemerna doba cakania harvesteru v 1 den na poli: 5.66667 minut
+Pocet dnu: 17
+Pocet destivych dnu: 6
+Pocet slunecnych dnu: 11
+Priemerna doba cakania harvesteru v 1 den na poli: 4 minut
+Pocet dnu: 17
+Pocet destivych dnu: 5
+Pocet slunecnych dnu: 12
+Priemerna doba cakania harvesteru v 1 den na poli: 4.33333 minut
+Pocet dnu: 19
+Pocet destivych dnu: 7
+Pocet slunecnych dnu: 12
+Priemerna doba cakania harvesteru v 1 den na poli: 5.33333 minut
+Pocet dnu: 18
+Pocet destivych dnu: 6
+Pocet slunecnych dnu: 12
+Priemerna doba cakania harvesteru v 1 den na poli: 5 minut
+Pocet dnu: 17
+Pocet destivych dnu: 5
+Pocet slunecnych dnu: 12
+Priemerna doba cakania harvesteru v 1 den na poli: 3.66667 minut
+Pocet dnu: 18
+Pocet destivych dnu: 6
+Pocet slunecnych dnu: 12
+Priemerna doba cakania harvesteru v 1 den na poli: 5 minut
+Pocet dnu: 20
+Pocet destivych dnu: 8
+Pocet slunecnych dnu: 12
+Priemerna doba cakania harvesteru v 1 den na poli: 3.33333 minut
 Pocet dnu: 14
 Pocet destivych dnu: 3
 Pocet slunecnych dnu: 11
-Priemerna doba cakania harvesteru v 1 den na poli: 3.6 minut
-Pocet dnu: 16
-Pocet destivych dnu: 6
-Pocet slunecnych dnu: 10
-Priemerna doba cakania harvesteru v 1 den na poli: 3.4 minut
-Pocet dnu: 14
-Pocet destivych dnu: 4
-Pocet slunecnych dnu: 10
-Priemerna doba cakania harvesteru v 1 den na poli: 2.6 minut
-Pocet dnu: 11
-Pocet destivych dnu: 2
-Pocet slunecnych dnu: 9
-Priemerna doba cakania harvesteru v 1 den na poli: 3.2 minut
-Pocet dnu: 12
-Pocet destivych dnu: 2
-Pocet slunecnych dnu: 10
-Priemerna doba cakania harvesteru v 1 den na poli: 3.6 minut
+Priemerna doba cakania harvesteru v 1 den na poli: 4 minut
 Pocet dnu: 17
-Pocet destivych dnu: 7
-Pocet slunecnych dnu: 10
-Priemerna doba cakania harvesteru v 1 den na poli: 2.8 minut
-Pocet dnu: 14
-Pocet destivych dnu: 4
-Pocet slunecnych dnu: 10
-Priemerna doba cakania harvesteru v 1 den na poli: 3.2 minut
-Pocet dnu: 16
-Pocet destivych dnu: 6
-Pocet slunecnych dnu: 10
-Priemerna doba cakania harvesteru v 1 den na poli: 3.2 minut
-Pocet dnu: 11
-Pocet destivych dnu: 2
-Pocet slunecnych dnu: 9
-Priemerna doba cakania harvesteru v 1 den na poli: 3.2 minut
-Pocet dnu: 13
-Pocet destivych dnu: 3
-Pocet slunecnych dnu: 10
-Priemerna doba cakania harvesteru v 1 den na poli: 3.4 minut
-Pocet dnu: 13
-Pocet destivych dnu: 4
-Pocet slunecnych dnu: 9
-Priemerna doba cakania harvesteru v 1 den na poli: 3 minut
-Pocet dnu: 15
 Pocet destivych dnu: 5
-Pocet slunecnych dnu: 10
-Priemerna doba cakania harvesteru v 1 den na poli: 2.4 minut
-Pocet dnu: 11
-Pocet destivych dnu: 1
-Pocet slunecnych dnu: 10
-Priemerna doba cakania harvesteru v 1 den na poli: 3.6 minut
-Pocet dnu: 13
-Pocet destivych dnu: 4
-Pocet slunecnych dnu: 9
-Priemerna doba cakania harvesteru v 1 den na poli: 2.8 minut
-Pocet dnu: 10
-Pocet destivych dnu: 1
-Pocet slunecnych dnu: 9
-Priemerna doba cakania harvesteru v 1 den na poli: 2.6 minut
-Pocet dnu: 13
-Pocet destivych dnu: 3
-Pocet slunecnych dnu: 10
-Priemerna doba cakania harvesteru v 1 den na poli: 2.4 minut
-Pocet dnu: 18
-Pocet destivych dnu: 8
-Pocet slunecnych dnu: 10
-Priemerna doba cakania harvesteru v 1 den na poli: 2.6 minut
-Pocet dnu: 14
-Pocet destivych dnu: 4
-Pocet slunecnych dnu: 10
-Priemerna doba cakania harvesteru v 1 den na poli: 2.2 minut
-Pocet dnu: 13
-Pocet destivych dnu: 4
-Pocet slunecnych dnu: 9
-Priemerna doba cakania harvesteru v 1 den na poli: 4.4 minut
-Pocet dnu: 12
-Pocet destivych dnu: 2
-Pocet slunecnych dnu: 10
-Priemerna doba cakania harvesteru v 1 den na poli: 3.4 minut
-Pocet dnu: 13
-Pocet destivych dnu: 3
-Pocet slunecnych dnu: 10
-Priemerna doba cakania harvesteru v 1 den na poli: 3.4 minut
+Pocet slunecnych dnu: 12
+Priemerna doba cakania harvesteru v 1 den na poli: 7 minut
 Pocet dnu: 17
-Pocet destivych dnu: 7
-Pocet slunecnych dnu: 10
-Priemerna doba cakania harvesteru v 1 den na poli: 3.6 minut
-Pocet dnu: 16
-Pocet destivych dnu: 6
-Pocet slunecnych dnu: 10
-Priemerna doba cakania harvesteru v 1 den na poli: 3.4 minut
-Pocet dnu: 14
-Pocet destivych dnu: 4
-Pocet slunecnych dnu: 10
-Priemerna doba cakania harvesteru v 1 den na poli: 3.8 minut
-Pocet dnu: 12
-Pocet destivych dnu: 2
-Pocet slunecnych dnu: 10
-Priemerna doba cakania harvesteru v 1 den na poli: 2.8 minut
-Pocet dnu: 9
-Pocet destivych dnu: 0
-Pocet slunecnych dnu: 9
-Priemerna doba cakania harvesteru v 1 den na poli: 2.8 minut
-Pocet dnu: 11
-Pocet destivych dnu: 2
-Pocet slunecnych dnu: 9
-Priemerna doba cakania harvesteru v 1 den na poli: 3 minut
-Pocet dnu: 16
-Pocet destivych dnu: 6
-Pocet slunecnych dnu: 10
-Priemerna doba cakania harvesteru v 1 den na poli: 3.4 minut
-Pocet dnu: 13
-Pocet destivych dnu: 3
-Pocet slunecnych dnu: 10
-Priemerna doba cakania harvesteru v 1 den na poli: 2.4 minut
+Pocet destivych dnu: 5
+Pocet slunecnych dnu: 12
+Priemerna doba cakania harvesteru v 1 den na poli: 4 minut
 Pocet dnu: 17
-Pocet destivych dnu: 7
-Pocet slunecnych dnu: 10
-Priemerna doba cakania harvesteru v 1 den na poli: 2.6 minut
-Pocet dnu: 13
 Pocet destivych dnu: 4
-Pocet slunecnych dnu: 9
-Priemerna doba cakania harvesteru v 1 den na poli: 2.6 minut
-Pocet dnu: 18
+Pocet slunecnych dnu: 13
+Priemerna doba cakania harvesteru v 1 den na poli: 4 minut
+Pocet dnu: 19
 Pocet destivych dnu: 8
-Pocet slunecnych dnu: 10
-Priemerna doba cakania harvesteru v 1 den na poli: 3.2 minut
+Pocet slunecnych dnu: 11
+Priemerna doba cakania harvesteru v 1 den na poli: 5 minut
 Pocet dnu: 16
-Pocet destivych dnu: 7
-Pocet slunecnych dnu: 9
-Priemerna doba cakania harvesteru v 1 den na poli: 3.4 minut
-Pocet dnu: 12
+Pocet destivych dnu: 4
+Pocet slunecnych dnu: 12
+Priemerna doba cakania harvesteru v 1 den na poli: 6 minut
+Pocet dnu: 15
 Pocet destivych dnu: 3
-Pocet slunecnych dnu: 9
-Priemerna doba cakania harvesteru v 1 den na poli: 3.2 minut
-Pocet dnu: 15
-Pocet destivych dnu: 5
-Pocet slunecnych dnu: 10
-Priemerna doba cakania harvesteru v 1 den na poli: 3.2 minut
-Pocet dnu: 18
-Pocet destivych dnu: 8
-Pocet slunecnych dnu: 10
-Priemerna doba cakania harvesteru v 1 den na poli: 3.4 minut
-Pocet dnu: 15
-Pocet destivych dnu: 5
-Pocet slunecnych dnu: 10
-Priemerna doba cakania harvesteru v 1 den na poli: 3 minut
-Pocet dnu: 18
-Pocet destivych dnu: 8
-Pocet slunecnych dnu: 10
-Priemerna doba cakania harvesteru v 1 den na poli: 3 minut
+Pocet slunecnych dnu: 12
+Priemerna doba cakania harvesteru v 1 den na poli: 5 minut
+Pocet dnu: 24
+Pocet destivych dnu: 12
+Pocet slunecnych dnu: 12
+Priemerna doba cakania harvesteru v 1 den na poli: 4.33333 minut
 Pocet dnu: 14
-Pocet destivych dnu: 5
-Pocet slunecnych dnu: 9
-Priemerna doba cakania harvesteru v 1 den na poli: 1.8 minut
-Pocet dnu: 12
-Pocet destivych dnu: 3
-Pocet slunecnych dnu: 9
-Priemerna doba cakania harvesteru v 1 den na poli: 3.4 minut
-Pocet dnu: 17
-Pocet destivych dnu: 7
-Pocet slunecnych dnu: 10
-Priemerna doba cakania harvesteru v 1 den na poli: 3.8 minut
-Pocet dnu: 12
 Pocet destivych dnu: 2
-Pocet slunecnych dnu: 10
-Priemerna doba cakania harvesteru v 1 den na poli: 2.4 minut
-Pocet dnu: 15
-Pocet destivych dnu: 5
-Pocet slunecnych dnu: 10
-Priemerna doba cakania harvesteru v 1 den na poli: 2.8 minut
-Pocet dnu: 12
+Pocet slunecnych dnu: 12
+Priemerna doba cakania harvesteru v 1 den na poli: 6 minut
+Pocet dnu: 13
 Pocet destivych dnu: 2
-Pocet slunecnych dnu: 10
-Priemerna doba cakania harvesteru v 1 den na poli: 3.6 minut
-Pocet dnu: 15
+Pocet slunecnych dnu: 11
+Priemerna doba cakania harvesteru v 1 den na poli: 4.33333 minut
+Pocet dnu: 14
+Pocet destivych dnu: 2
+Pocet slunecnych dnu: 12
+Priemerna doba cakania harvesteru v 1 den na poli: 3.66667 minut
+Pocet dnu: 18
 Pocet destivych dnu: 6
-Pocet slunecnych dnu: 9
-Priemerna doba cakania harvesteru v 1 den na poli: 3.8 minut
-Pocet dnu: 20
+Pocet slunecnych dnu: 12
+Priemerna doba cakania harvesteru v 1 den na poli: 5.33333 minut
+Pocet dnu: 19
+Pocet destivych dnu: 7
+Pocet slunecnych dnu: 12
+Priemerna doba cakania harvesteru v 1 den na poli: 4.66667 minut
+Pocet dnu: 21
+Pocet destivych dnu: 9
+Pocet slunecnych dnu: 12
+Priemerna doba cakania harvesteru v 1 den na poli: 4.33333 minut
+Pocet dnu: 18
+Pocet destivych dnu: 6
+Pocet slunecnych dnu: 12
+Priemerna doba cakania harvesteru v 1 den na poli: 6 minut
+Pocet dnu: 23
 Pocet destivych dnu: 10
-Pocet slunecnych dnu: 10
-Priemerna doba cakania harvesteru v 1 den na poli: 3 minut
-Pocet dnu: 12
-Pocet destivych dnu: 2
-Pocet slunecnych dnu: 10
-Priemerna doba cakania harvesteru v 1 den na poli: 3.8 minut
-Pocet dnu: 13
-Pocet destivych dnu: 4
-Pocet slunecnych dnu: 9
-Priemerna doba cakania harvesteru v 1 den na poli: 3.2 minut
-Pocet dnu: 15
-Pocet destivych dnu: 5
-Pocet slunecnych dnu: 10
-Priemerna doba cakania harvesteru v 1 den na poli: 3.4 minut
-Pocet dnu: 11
-Pocet destivych dnu: 2
-Pocet slunecnych dnu: 9
-Priemerna doba cakania harvesteru v 1 den na poli: 3 minut
-Pocet dnu: 27
-Pocet destivych dnu: 17
-Pocet slunecnych dnu: 10
-Priemerna doba cakania harvesteru v 1 den na poli: 3.4 minut
-Pocet dnu: 14
-Pocet destivych dnu: 4
-Pocet slunecnych dnu: 10
-Priemerna doba cakania harvesteru v 1 den na poli: 3.6 minut
-Pocet dnu: 15
-Pocet destivych dnu: 6
-Pocet slunecnych dnu: 9
-Priemerna doba cakania harvesteru v 1 den na poli: 4 minut
-Pocet dnu: 16
-Pocet destivych dnu: 7
-Pocet slunecnych dnu: 9
-Priemerna doba cakania harvesteru v 1 den na poli: 4 minut
-Pocet dnu: 11
-Pocet destivych dnu: 1
-Pocet slunecnych dnu: 10
-Priemerna doba cakania harvesteru v 1 den na poli: 3.8 minut
-Pocet dnu: 10
-Pocet destivych dnu: 1
-Pocet slunecnych dnu: 9
-Priemerna doba cakania harvesteru v 1 den na poli: 3 minut
+Pocet slunecnych dnu: 13
+Priemerna doba cakania harvesteru v 1 den na poli: 6 minut
 Pocet dnu: 19
-Pocet destivych dnu: 9
-Pocet slunecnych dnu: 10
-Priemerna doba cakania harvesteru v 1 den na poli: 3.6 minut
-Pocet dnu: 9
-Pocet destivych dnu: 0
-Pocet slunecnych dnu: 9
-Priemerna doba cakania harvesteru v 1 den na poli: 3.4 minut
-Pocet dnu: 11
-Pocet destivych dnu: 1
-Pocet slunecnych dnu: 10
-Priemerna doba cakania harvesteru v 1 den na poli: 3.2 minut
-Pocet dnu: 13
-Pocet destivych dnu: 4
-Pocet slunecnych dnu: 9
-Priemerna doba cakania harvesteru v 1 den na poli: 3.4 minut
-Pocet dnu: 14
-Pocet destivych dnu: 4
-Pocet slunecnych dnu: 10
-Priemerna doba cakania harvesteru v 1 den na poli: 3.4 minut
-Pocet dnu: 13
-Pocet destivych dnu: 4
-Pocet slunecnych dnu: 9
-Priemerna doba cakania harvesteru v 1 den na poli: 3 minut
-Pocet dnu: 11
-Pocet destivych dnu: 1
-Pocet slunecnych dnu: 10
-Priemerna doba cakania harvesteru v 1 den na poli: 2.6 minut
-Pocet dnu: 22
-Pocet destivych dnu: 12
-Pocet slunecnych dnu: 10
-Priemerna doba cakania harvesteru v 1 den na poli: 2.8 minut
-Pocet dnu: 14
-Pocet destivych dnu: 5
-Pocet slunecnych dnu: 9
-Priemerna doba cakania harvesteru v 1 den na poli: 3.6 minut
-Pocet dnu: 16
-Pocet destivych dnu: 6
-Pocet slunecnych dnu: 10
-Priemerna doba cakania harvesteru v 1 den na poli: 4.8 minut
-Pocet dnu: 14
-Pocet destivych dnu: 5
-Pocet slunecnych dnu: 9
-Priemerna doba cakania harvesteru v 1 den na poli: 3.6 minut
-Pocet dnu: 16
-Pocet destivych dnu: 6
-Pocet slunecnych dnu: 10
-Priemerna doba cakania harvesteru v 1 den na poli: 2.8 minut
-Pocet dnu: 17
 Pocet destivych dnu: 7
-Pocet slunecnych dnu: 10
-Priemerna doba cakania harvesteru v 1 den na poli: 3 minut
-Pocet dnu: 14
-Pocet destivych dnu: 5
-Pocet slunecnych dnu: 9
-Priemerna doba cakania harvesteru v 1 den na poli: 3.6 minut
-Pocet dnu: 17
-Pocet destivych dnu: 7
-Pocet slunecnych dnu: 10
-Priemerna doba cakania harvesteru v 1 den na poli: 4.4 minut
-Pocet dnu: 13
-Pocet destivych dnu: 3
-Pocet slunecnych dnu: 10
-Priemerna doba cakania harvesteru v 1 den na poli: 3.6 minut
-Pocet dnu: 14
-Pocet destivych dnu: 5
-Pocet slunecnych dnu: 9
-Priemerna doba cakania harvesteru v 1 den na poli: 3.6 minut
-Pocet dnu: 14
-Pocet destivych dnu: 4
-Pocet slunecnych dnu: 10
-Priemerna doba cakania harvesteru v 1 den na poli: 3.4 minut
+Pocet slunecnych dnu: 12
+Priemerna doba cakania harvesteru v 1 den na poli: 5.66667 minut
 Pocet dnu: 16
-Pocet destivych dnu: 7
-Pocet slunecnych dnu: 9
-Priemerna doba cakania harvesteru v 1 den na poli: 3.4 minut
-Pocet dnu: 11
-Pocet destivych dnu: 2
-Pocet slunecnych dnu: 9
-Priemerna doba cakania harvesteru v 1 den na poli: 2.4 minut
-Pocet dnu: 13
 Pocet destivych dnu: 4
-Pocet slunecnych dnu: 9
-Priemerna doba cakania harvesteru v 1 den na poli: 3.2 minut
-Pocet dnu: 15
-Pocet destivych dnu: 6
-Pocet slunecnych dnu: 9
-Priemerna doba cakania harvesteru v 1 den na poli: 2.6 minut
-Pocet dnu: 14
-Pocet destivych dnu: 5
-Pocet slunecnych dnu: 9
-Priemerna doba cakania harvesteru v 1 den na poli: 3.6 minut
-Pocet dnu: 15
-Pocet destivych dnu: 5
-Pocet slunecnych dnu: 10
-Priemerna doba cakania harvesteru v 1 den na poli: 2.8 minut
-Pocet dnu: 11
-Pocet destivych dnu: 2
-Pocet slunecnych dnu: 9
-Priemerna doba cakania harvesteru v 1 den na poli: 3 minut
-Pocet dnu: 14
-Pocet destivych dnu: 4
-Pocet slunecnych dnu: 10
-Priemerna doba cakania harvesteru v 1 den na poli: 4 minut
-Pocet dnu: 13
-Pocet destivych dnu: 3
-Pocet slunecnych dnu: 10
-Priemerna doba cakania harvesteru v 1 den na poli: 1.8 minut
-Pocet dnu: 21
-Pocet destivych dnu: 11
-Pocet slunecnych dnu: 10
-Priemerna doba cakania harvesteru v 1 den na poli: 3.6 minut
-Pocet dnu: 15
-Pocet destivych dnu: 5
-Pocet slunecnych dnu: 10
-Priemerna doba cakania harvesteru v 1 den na poli: 3.6 minut
-Pocet dnu: 13
-Pocet destivych dnu: 4
-Pocet slunecnych dnu: 9
-Priemerna doba cakania harvesteru v 1 den na poli: 2.6 minut
-Pocet dnu: 21
-Pocet destivych dnu: 12
-Pocet slunecnych dnu: 9
-Priemerna doba cakania harvesteru v 1 den na poli: 2.6 minut
-Pocet dnu: 15
-Pocet destivych dnu: 5
-Pocet slunecnych dnu: 10
-Priemerna doba cakania harvesteru v 1 den na poli: 4 minut
-Pocet dnu: 12
-Pocet destivych dnu: 3
-Pocet slunecnych dnu: 9
-Priemerna doba cakania harvesteru v 1 den na poli: 3.2 minut
+Pocet slunecnych dnu: 12
+Priemerna doba cakania harvesteru v 1 den na poli: 6.66667 minut
 Pocet dnu: 19
-Pocet destivych dnu: 9
-Pocet slunecnych dnu: 10
-Priemerna doba cakania harvesteru v 1 den na poli: 3.6 minut
-Pocet dnu: 17
-Pocet destivych dnu: 7
-Pocet slunecnych dnu: 10
-Priemerna doba cakania harvesteru v 1 den na poli: 3.6 minut
-Pocet dnu: 18
+Pocet destivych dnu: 6
+Pocet slunecnych dnu: 13
+Priemerna doba cakania harvesteru v 1 den na poli: 5.66667 minut
+Pocet dnu: 15
+Pocet destivych dnu: 3
+Pocet slunecnych dnu: 12
+Priemerna doba cakania harvesteru v 1 den na poli: 6.66667 minut
+Pocet dnu: 15
+Pocet destivych dnu: 3
+Pocet slunecnych dnu: 12
+Priemerna doba cakania harvesteru v 1 den na poli: 4.66667 minut
+Pocet dnu: 20
 Pocet destivych dnu: 8
-Pocet slunecnych dnu: 10
-Priemerna doba cakania harvesteru v 1 den na poli: 3.8 minut
-Pocet dnu: 13
-Pocet destivych dnu: 4
-Pocet slunecnych dnu: 9
-Priemerna doba cakania harvesteru v 1 den na poli: 2.8 minut
-Pocet dnu: 21
-Pocet destivych dnu: 11
-Pocet slunecnych dnu: 10
-Priemerna doba cakania harvesteru v 1 den na poli: 3.6 minut
-Pocet dnu: 15
+Pocet slunecnych dnu: 12
+Priemerna doba cakania harvesteru v 1 den na poli: 4.66667 minut
+Pocet dnu: 18
 Pocet destivych dnu: 5
-Pocet slunecnych dnu: 10
-Priemerna doba cakania harvesteru v 1 den na poli: 4 minut
-Pocet dnu: 13
-Pocet destivych dnu: 4
-Pocet slunecnych dnu: 9
-Priemerna doba cakania harvesteru v 1 den na poli: 2.4 minut
+Pocet slunecnych dnu: 13
+Priemerna doba cakania harvesteru v 1 den na poli: 5.33333 minut
 Pocet dnu: 15
-Pocet destivych dnu: 6
-Pocet slunecnych dnu: 9
-Priemerna doba cakania harvesteru v 1 den na poli: 2.4 minut
-Pocet dnu: 12
 Pocet destivych dnu: 2
-Pocet slunecnych dnu: 10
-Priemerna doba cakania harvesteru v 1 den na poli: 3.4 minut
-Pocet dnu: 10
+Pocet slunecnych dnu: 13
+Priemerna doba cakania harvesteru v 1 den na poli: 5.33333 minut
+Pocet dnu: 15
+Pocet destivych dnu: 3
+Pocet slunecnych dnu: 12
+Priemerna doba cakania harvesteru v 1 den na poli: 3.33333 minut
+Pocet dnu: 17
+Pocet destivych dnu: 4
+Pocet slunecnych dnu: 13
+Priemerna doba cakania harvesteru v 1 den na poli: 5 minut
+Pocet dnu: 19
+Pocet destivych dnu: 6
+Pocet slunecnych dnu: 13
+Priemerna doba cakania harvesteru v 1 den na poli: 7 minut
+Pocet dnu: 15
+Pocet destivych dnu: 3
+Pocet slunecnych dnu: 12
+Priemerna doba cakania harvesteru v 1 den na poli: 5 minut
+Pocet dnu: 16
+Pocet destivych dnu: 5
+Pocet slunecnych dnu: 11
+Priemerna doba cakania harvesteru v 1 den na poli: 3.66667 minut
+Pocet dnu: 16
+Pocet destivych dnu: 5
+Pocet slunecnych dnu: 11
+Priemerna doba cakania harvesteru v 1 den na poli: 4.66667 minut
+Pocet dnu: 15
+Pocet destivych dnu: 3
+Pocet slunecnych dnu: 12
+Priemerna doba cakania harvesteru v 1 den na poli: 4.66667 minut
+Pocet dnu: 22
+Pocet destivych dnu: 10
+Pocet slunecnych dnu: 12
+Priemerna doba cakania harvesteru v 1 den na poli: 6 minut
+Pocet dnu: 16
+Pocet destivych dnu: 4
+Pocet slunecnych dnu: 12
+Priemerna doba cakania harvesteru v 1 den na poli: 5 minut
+Pocet dnu: 24
+Pocet destivych dnu: 12
+Pocet slunecnych dnu: 12
+Priemerna doba cakania harvesteru v 1 den na poli: 4.66667 minut
+Pocet dnu: 13
+Pocet destivych dnu: 2
+Pocet slunecnych dnu: 11
+Priemerna doba cakania harvesteru v 1 den na poli: 3.66667 minut
+Pocet dnu: 13
 Pocet destivych dnu: 1
-Pocet slunecnych dnu: 9
-Priemerna doba cakania harvesteru v 1 den na poli: 3 minut
+Pocet slunecnych dnu: 12
+Priemerna doba cakania harvesteru v 1 den na poli: 5.66667 minut
+Pocet dnu: 18
+Pocet destivych dnu: 6
+Pocet slunecnych dnu: 12
+Priemerna doba cakania harvesteru v 1 den na poli: 5.66667 minut
+Pocet dnu: 15
+Pocet destivych dnu: 3
+Pocet slunecnych dnu: 12
+Priemerna doba cakania harvesteru v 1 den na poli: 4 minut
+Pocet dnu: 16
+Pocet destivych dnu: 4
+Pocet slunecnych dnu: 12
+Priemerna doba cakania harvesteru v 1 den na poli: 4.66667 minut
+Pocet dnu: 14
+Pocet destivych dnu: 2
+Pocet slunecnych dnu: 12
+Priemerna doba cakania harvesteru v 1 den na poli: 4.33333 minut
+Pocet dnu: 14
+Pocet destivych dnu: 2
+Pocet slunecnych dnu: 12
+Priemerna doba cakania harvesteru v 1 den na poli: 4.66667 minut
+Pocet dnu: 17
+Pocet destivych dnu: 5
+Pocet slunecnych dnu: 12
+Priemerna doba cakania harvesteru v 1 den na poli: 5 minut
+Pocet dnu: 22
+Pocet destivych dnu: 10
+Pocet slunecnych dnu: 12
+Priemerna doba cakania harvesteru v 1 den na poli: 5.33333 minut
+Pocet dnu: 15
+Pocet destivych dnu: 3
+Pocet slunecnych dnu: 12
+Priemerna doba cakania harvesteru v 1 den na poli: 4 minut
+Pocet dnu: 15
+Pocet destivych dnu: 4
+Pocet slunecnych dnu: 11
+Priemerna doba cakania harvesteru v 1 den na poli: 3.66667 minut
+Pocet dnu: 17
+Pocet destivych dnu: 5
+Pocet slunecnych dnu: 12
+Priemerna doba cakania harvesteru v 1 den na poli: 5.33333 minut
+Pocet dnu: 21
+Pocet destivych dnu: 9
+Pocet slunecnych dnu: 12
+Priemerna doba cakania harvesteru v 1 den na poli: 6.33333 minut
+Pocet dnu: 20
+Pocet destivych dnu: 7
+Pocet slunecnych dnu: 13
+Priemerna doba cakania harvesteru v 1 den na poli: 4.66667 minut
+Pocet dnu: 18
+Pocet destivych dnu: 6
+Pocet slunecnych dnu: 12
+Priemerna doba cakania harvesteru v 1 den na poli: 6 minut
+Pocet dnu: 18
+Pocet destivych dnu: 6
+Pocet slunecnych dnu: 12
+Priemerna doba cakania harvesteru v 1 den na poli: 5.33333 minut
+Pocet dnu: 14
+Pocet destivych dnu: 2
+Pocet slunecnych dnu: 12
+Priemerna doba cakania harvesteru v 1 den na poli: 4.66667 minut
+Pocet dnu: 17
+Pocet destivych dnu: 4
+Pocet slunecnych dnu: 13
+Priemerna doba cakania harvesteru v 1 den na poli: 3.66667 minut
+Pocet dnu: 20
+Pocet destivych dnu: 8
+Pocet slunecnych dnu: 12
+Priemerna doba cakania harvesteru v 1 den na poli: 4.66667 minut
+Pocet dnu: 17
+Pocet destivych dnu: 5
+Pocet slunecnych dnu: 12
+Priemerna doba cakania harvesteru v 1 den na poli: 5 minut
+Pocet dnu: 18
+Pocet destivych dnu: 6
+Pocet slunecnych dnu: 12
+Priemerna doba cakania harvesteru v 1 den na poli: 6.33333 minut
+Pocet dnu: 17
+Pocet destivych dnu: 5
+Pocet slunecnych dnu: 12
+Priemerna doba cakania harvesteru v 1 den na poli: 5.33333 minut
+Pocet dnu: 18
+Pocet destivych dnu: 6
+Pocet slunecnych dnu: 12
+Priemerna doba cakania harvesteru v 1 den na poli: 5.33333 minut
+Pocet dnu: 22
+Pocet destivych dnu: 10
+Pocet slunecnych dnu: 12
+Priemerna doba cakania harvesteru v 1 den na poli: 5.66667 minut
+Pocet dnu: 20
+Pocet destivych dnu: 7
+Pocet slunecnych dnu: 13
+Priemerna doba cakania harvesteru v 1 den na poli: 4.66667 minut
+Pocet dnu: 18
+Pocet destivych dnu: 6
+Pocet slunecnych dnu: 12
+Priemerna doba cakania harvesteru v 1 den na poli: 5.33333 minut
+Pocet dnu: 17
+Pocet destivych dnu: 5
+Pocet slunecnych dnu: 12
+Priemerna doba cakania harvesteru v 1 den na poli: 4.66667 minut
+Pocet dnu: 19
+Pocet destivych dnu: 7
+Pocet slunecnych dnu: 12
+Priemerna doba cakania harvesteru v 1 den na poli: 5.66667 minut
+Pocet dnu: 17
+Pocet destivych dnu: 5
+Pocet slunecnych dnu: 12
+Priemerna doba cakania harvesteru v 1 den na poli: 5 minut
+Pocet dnu: 21
+Pocet destivych dnu: 8
+Pocet slunecnych dnu: 13
+Priemerna doba cakania harvesteru v 1 den na poli: 5.66667 minut
+Pocet dnu: 17
+Pocet destivych dnu: 5
+Pocet slunecnych dnu: 12
+Priemerna doba cakania harvesteru v 1 den na poli: 5.33333 minut
+Pocet dnu: 16
+Pocet destivych dnu: 4
+Pocet slunecnych dnu: 12
+Priemerna doba cakania harvesteru v 1 den na poli: 5.66667 minut
+Pocet dnu: 16
+Pocet destivych dnu: 4
+Pocet slunecnych dnu: 12
+Priemerna doba cakania harvesteru v 1 den na poli: 5 minut
+Pocet dnu: 18
+Pocet destivych dnu: 6
+Pocet slunecnych dnu: 12
+Priemerna doba cakania harvesteru v 1 den na poli: 4.33333 minut
+Pocet dnu: 16
+Pocet destivych dnu: 5
+Pocet slunecnych dnu: 11
+Priemerna doba cakania harvesteru v 1 den na poli: 3.33333 minut
+Pocet dnu: 24
+Pocet destivych dnu: 12
+Pocet slunecnych dnu: 12
+Priemerna doba cakania harvesteru v 1 den na poli: 4.66667 minut
+Pocet dnu: 16
+Pocet destivych dnu: 4
+Pocet slunecnych dnu: 12
+Priemerna doba cakania harvesteru v 1 den na poli: 5 minut
+Pocet dnu: 15
+Pocet destivych dnu: 3
+Pocet slunecnych dnu: 12
+Priemerna doba cakania harvesteru v 1 den na poli: 5.66667 minut
+Pocet dnu: 17
+Pocet destivych dnu: 5
+Pocet slunecnych dnu: 12
+Priemerna doba cakania harvesteru v 1 den na poli: 4 minut
+Pocet dnu: 17
+Pocet destivych dnu: 5
+Pocet slunecnych dnu: 12
+Priemerna doba cakania harvesteru v 1 den na poli: 6.33333 minut
